@@ -1,4 +1,6 @@
-$body-color: blue;
+@import 'reset';
+
+$body-color: black;
 
 body {
   color: $body-color;
