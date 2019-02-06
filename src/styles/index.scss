@@ -1,9 +1,7 @@
 @import 'reset';
 
 $body-color: black;
-*{
-  border: 1px solid red;
-}
+
 body {
   color: $body-color;
 }
@@ -19,17 +17,30 @@ body {
   font-family: 'Rubik', 'Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h3{
+  padding: 1em;
+}
+
 #name, h4{
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+}
 #projects{
+  text-align: center;
   height: 800px;
 }
 
 .project-tile{
   width: 35%;
   margin: 0 auto;
+  border: 1px solid black;
  /*  overflow: hidden; */
 }
 
