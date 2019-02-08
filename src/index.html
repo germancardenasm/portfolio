@@ -23,7 +23,7 @@
  
 
   <section id="projects">
-    <h3 class="center">Projects developed trought my path</h3>
+    <h3 class="center">Projects Developed</h3>
 
     <div class="project-tile">
       <a href="https://www.esp.com" target="_blank"><div class="project-container">
@@ -70,20 +70,29 @@
   </section>
 
   <section id="social">
-    <h3 class="center">Visit my social network</h3>
-      <span class="icon"><i class="fab fa-facebook-square fa-10x"></i></span>
-      <span class="icon"><i class="fab fa-github-square fa-10x"></i></span>
+    <h3 class="center">Visit my social networks</h3>
+      <span class="icon"><a href="https://github.com/germancardenasm"><i class="fab fa-facebook-square fa-10x"></a></i></span>
+      <span class="icon"><a href="https://github.com/germancardenasm"><i class="fab fa-github-square fa-10x"></i></a></span>
 
   </section>
 
   <section id="contact">
       <h3 class="center">Feel free to get in touch</h3>
-    <form>
-      <input type="text">
-      <input type="submit"> 
-
-    </form>
+      <form id="survey-form">
+          <label id="name-label" for=name>Names:</label> 
+          <input type="text" id="name" name="name" placeholder="Enter you name" required/><br>
+          <label id="number-label" for=age>Age:</label> 
+          <input type="number" id="number" name="age" min="1" max="110" placeholder="Enter you age"/><br>
+          <label id="email-label" for=email>Email:</label> 
+          <input type="email" id="email" name="email" placeholder="Enter you email" required/><br>
+          <label for="comments">Any Comments or Suggestions?</label>
+          <textarea type="textarea" id="comments" name="comments" placeholder="Enter your comments"></textarea><br>
+          <input type="submit" id="submit"> 
   </section>
+
+  <footer>
+    <p>German Cardenas - Web Developer</p>
+  </footer>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
