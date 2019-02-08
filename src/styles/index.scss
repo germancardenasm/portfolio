@@ -4,6 +4,31 @@ $body-color: black;
 
 body {
   color: $body-color;
+
+}
+
+#navbar{
+  background-color: red;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  #nav-list{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 0;
+    padding: 1em;
+    li{
+      font-family: Trirong;
+      font-weight: bold;
+      color: white;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+    }
+  }
 }
 
 #welcome-section{
@@ -19,6 +44,8 @@ body {
 
 h3{
   padding: 1em;
+  font-size: 25px;
+  width: 100vw;
 }
 
 #name, h4{
@@ -28,18 +55,30 @@ h3{
 a {
   text-decoration: none;
   padding: 0;
+  color: white;
 }
+
 a:hover {
   text-decoration: none;
 }
-#projects{
+
+.center{
   text-align: center;
-  height: 800px;
+}
+
+#projects{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em 2em;
 }
 
 .project-tile{
   width: 35%;
-  margin: 0 auto;
+  min-width: 250px;;
+  max-width: 500px;
+  margin: 1em;
   border: 1px solid black;
  /*  overflow: hidden; */
 }
@@ -59,4 +98,12 @@ a:hover {
     grid-row: 2/3;
   }
 }
-
+#social{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 3em;
+}
+ .icon{
+   margin: 0 2em;
+ }
